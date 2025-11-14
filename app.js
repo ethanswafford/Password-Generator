@@ -23,11 +23,14 @@ function passwordGenerator(len) {
 
 // TODO 2: Listen for a **single click** instead of a double click
 $passwordBtn.on('click', function () {
+    const newPassword = passwordGenerator(15);
+    $passwordDisplay.text(newPassword.trim());
 
 });
 
 // TODO 3: Generate a **15-character** password (not 12)
-$passwordBtn.on('dblclick', function () {
+/* $passwordBtn.on('dblclick', function () {
     const newPassword = passwordGenerator(12);
     $passwordDisplay.text(newPassword.trim());
-});
+
+}); */
