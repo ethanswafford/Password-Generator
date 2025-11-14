@@ -4,7 +4,7 @@ console.log('Hooked And Cooked By JavaScript');
 
 // TODO 1: Fix the selector so it targets the button with **ID** "password-btn"
 // (Right now it's using a class selector for .password-btn, but the HTML uses an ID.)
-const $passwordBtn = $('.password-btn');
+const $passwordBtn = $('#password-btn');
 const $passwordDisplay = $('#password-display');
 
 // Returns a random visible ASCII character (roughly punctuation/numbers/letters)
@@ -22,6 +22,10 @@ function passwordGenerator(len) {
 }
 
 // TODO 2: Listen for a **single click** instead of a double click
+$passwordBtn.on('click', function () {
+
+});
+
 // TODO 3: Generate a **15-character** password (not 12)
 $passwordBtn.on('dblclick', function () {
     const newPassword = passwordGenerator(12);
