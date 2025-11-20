@@ -23,7 +23,7 @@ function passwordGenerator(len) {
 
 // TODO 2: Listen for a **single click** instead of a double click
 $passwordBtn.on('click', function () {
-    const newPassword = passwordGenerator(16);
+    const newPassword = passwordGenerator(15);
     $passwordDisplay.text(newPassword.trim());
 
 });
